@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<?import javafx.scene.control.Button?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.slot.Controller">
+      fx:controller="com.example.slot.BagController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label fx:id="balanceLabel" text="Монетки: 0"/>
-    <Button text="Добавить монетку" onAction="#onPay"/>
-    <Button fx:id="playButton" text="Играть" onAction="#onPlay"/>
+    <Label text="Выберите мешочек"/>
+    <Button text="Мешочек 1" onAction="#onBag"/>
+    <Button text="Мешочек 2" onAction="#onBag"/>
+    <Button text="Мешочек 3" onAction="#onBag"/>
 </VBox>
