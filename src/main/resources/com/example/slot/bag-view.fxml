@@ -6,13 +6,15 @@
 <?import javafx.scene.layout.VBox?>
 
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.slot.BagController">
+      fx:controller="com.example.slot.BagController"
+      styleClass="bag-panel"
+      stylesheets="@style.css">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label text="Выберите мешочек"/>
-    <Button text="Мешочек 1" onAction="#onBag"/>
-    <Button text="Мешочек 2" onAction="#onBag"/>
-    <Button text="Мешочек 3" onAction="#onBag"/>
+    <Label styleClass="subtitle-label" text="Выберите мешочек"/>
+    <Button styleClass="bag-button" text="Мешочек 1" onAction="#onBag"/>
+    <Button styleClass="bag-button" text="Мешочек 2" onAction="#onBag"/>
+    <Button styleClass="bag-button" text="Мешочек 3" onAction="#onBag"/>
 </VBox>

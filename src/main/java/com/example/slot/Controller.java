@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -114,7 +115,10 @@ public class Controller {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("bag-view.fxml"));
             Stage stage = new Stage();
             stage.setTitle("Выбор мешочка");
-            stage.setScene(new Scene(loader.load(), 280, 220));
+            Scene scene = new Scene(loader.load(), 280, 260);
+            scene.setFill(Color.web("#071028"));
+            stage.setScene(scene);
+            scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
             BagController bagController = loader.getController();
             bagController.init(this, action, stage);
             stage.show();
